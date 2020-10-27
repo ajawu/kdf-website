@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kdf Landing Page</title>
+</head>
+<body>
+    <h2>This is the kdf landing page</h2>
+    <p>The user input form is going to be here too.</p>
+     <form method="POST" class="post-form">
+         {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Contact KDF</button>
+    </form>
+</body>
+</html>
