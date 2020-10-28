@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./kdf
+      dockerfile: ../Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./kdf/:/usr/src/kdf/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./settings.ini

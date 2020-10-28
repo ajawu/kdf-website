@@ -1,0 +1,72 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+  <a class="navbar-brand" href="/">KDF</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample05">
+    <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="/#services">
+          Services
+        </a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="/#equipment">Equipment</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link active" href="{% url 'about_page' %}">About</a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="{% url 'contact_page' %}">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto cta-btn">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'quote_page' %}">
+          Get A <br />
+          Quote
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+{% endblock %}
+
+{% block content %}
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 order-lg-3 mb-5">
+            <img src="{% static 'landing/img/slider-2.jpg' %}" alt="Image placeholder" class="img-fluid" style="margin-top: 60px; height: 290px;">
+          </div>
+          <div class="col-md-1 order-lg-2"></div>
+          <div class="col-md-5 order-lg-1">
+            <h2 class="text-uppercase heading mb-4">Company Information</h2>
+            <p class="mb-3">
+              KDF is poised to be the leading service provider in Geotechnical, Mining, Dredging, Water and Environmental Engineering, Servicing and Construction
+              sectors, using the best resources available to maximize its returns and create a positive impact on the industry.
+              The company presently has clients spanning different sectors. These include:
+            </p>
+            <ul class="list-unstyled check">
+              <li>Telecommunication</li>
+              <li>Construction</li>
+              <li>Oil &amp; Gas</li>
+              <li>Financial Institutions</li>
+              <li>Government Parastatals</li>
+              <li>Networth Individuals</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+{% endblock %}
