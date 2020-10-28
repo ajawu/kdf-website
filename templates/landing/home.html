@@ -1,313 +1,342 @@
 {% extends 'landing/base.html' %}
 {% load static %}
+
+{% block title %} KDF -  Home{% endblock %}
+
 {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container">
-  <a class="navbar-brand" href="/">KDF</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <div class="container">
+            <a class="navbar-brand" href="/">KDF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExample05">
-    <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
-      <li class="nav-item pr-2">
-        <a class="nav-link active" href="/">Home</a>
-      </li>
-      <li class="nav-item pr-2">
-        <a class="nav-link" href="/#services">
-          Services
-        </a>
-      </li>
-      <li class="nav-item pr-2">
-        <a class="nav-link" href="/#equipment">Equipment</a>
-      </li>
-      <li class="nav-item pr-2">
-        <a class="nav-link" href="{% url 'about_page' %}">About</a>
-      </li>
-      <li class="nav-item pr-2">
-        <a class="nav-link" href="{% url 'contact_page' %}">Contact</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto cta-btn">
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'quote_page' %}">
-          Get A <br />
-          Quote
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="/#services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="/#equipment">Equipment</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="{% url 'about_page' %}">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto cta-btn">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact_page' %}">
+                            Make <br/>
+                            Enquiries
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 {% endblock %}
 
 {% block content %}
     <section class="home-slider owl-carousel">
-      <div class="slider-item  image-2-slider">
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-7 col-sm-12 element-animate">
-              <h1>Our Philosophy</h1>
-              <p style="font-weight: 500;">
-                We are an outfit that maintains a high ethical standard. We are honest and straight forward in our business dealings. We will not promise what we cannot deliver. We provide good strategic thinking.
-              </p>
+        <div class="slider-item  image-2-slider">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-7 col-sm-12 element-animate">
+                        <h1>Our Philosophy</h1>
+                        <p style="font-weight: 500;">
+                            We are an outfit that maintains a high ethical standard. We are honest and straight forward
+                            in our business dealings. We will not promise what we cannot deliver. We provide good
+                            strategic thinking.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="slider-item image-1-slider">
-        <div class="container">
-          <div class="row slider-text align-items-center">
-            <div class="col-md-8 col-sm-12 element-animate">
-              <h1>Our People</h1>
-              <p style="font-weight: 500;">
-                KDF employs staff with professional experience in Engineering &amp; the Geotechnical areas. With our world class staff the client can be assured of quick, professional service.
-              </p>
+        <div class="slider-item image-1-slider">
+            <div class="container">
+                <div class="row slider-text align-items-center">
+                    <div class="col-md-8 col-sm-12 element-animate">
+                        <h1>Our People</h1>
+                        <p style="font-weight: 500;">
+                            KDF employs staff with professional experience in Engineering &amp; the Geotechnical areas.
+                            With our world class staff the client can be assured of quick, professional service.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="slider-item image-1-slider">
-        <div class="container">
-          <div class="row slider-text align-items-center">
-            <div class="col-md-7 col-sm-12 element-animate">
-              <h1>Our Strength</h1>
-              <p style="font-weight: 500;">
-                Our major strength is in our ability to provide creative input in all project implementation. We adhere to a strictly specified timeline to ensure timely project delivery and client satisfaction.
-              </p>
+        <div class="slider-item image-1-slider">
+            <div class="container">
+                <div class="row slider-text align-items-center">
+                    <div class="col-md-7 col-sm-12 element-animate">
+                        <h1>Our Strength</h1>
+                        <p style="font-weight: 500;">
+                            Our major strength is in our ability to provide creative input in all project
+                            implementation. We adhere to a strictly specified timeline to ensure timely project delivery
+                            and client satisfaction.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div class="slider-item image-1-slider">
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-8 col-sm-12 element-animate">
-              <h1>Our Creed</h1>
-              <p style="font-weight: 500;">
-                Deliver products that are above current industry standards. This is possible by taking all products through rigorous quality control tests that are above current industry specification while ensuring safety within a strict
-                budget and with project delivery timelines not negatively impacted.
-              </p>
+        <div class="slider-item image-1-slider">
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-8 col-sm-12 element-animate">
+                        <h1>Our Creed</h1>
+                        <p style="font-weight: 500;">
+                            Deliver products that are above current industry standards. This is possible by taking all
+                            products through rigorous quality control tests that are above current industry
+                            specification while ensuring safety within a strict
+                            budget and with project delivery timelines not negatively impacted.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- END slider -->
 
     <section class="container cta-overlap">
-      <div class="text d-flex">
-        <h2 class="h3">We deliver what we promise</h2>
-        <div class="ml-auto btn-wrap">
-          <a href="{% url 'quote_page' %}" class="btn-cta btn btn-outline-white">Get A Quote</a>
+        <div class="text d-flex">
+            <h2 class="h3">We deliver what we promise</h2>
+            <div class="ml-auto btn-wrap">
+                <a href="{% url 'contact_page' %}" class="btn-cta btn btn-outline-white">Make Enquiries</a>
+            </div>
         </div>
-      </div>
     </section>
     <!-- END section -->
 
     <section class="section" id="services">
-      <div class="container">
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Services</h2>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-blueprint icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Geotechnical Engineering Services</h3>
-                <p>Click the button below for list of services available in this category</p>
-                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
-              </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5 element-animate">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-uppercase heading border-bottom mb-4">Services</h2>
+                </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-building-1 icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Drilling &amp; Water Services</h3>
-                <p>Click the button below for list of services available in this category</p>
-                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
-              </div>
-            </div>
-          </div>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <span class="flaticon-engineer icon"></span>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">Geotechnical Engineering Services</h3>
+                            <p>Click the button below for the list of services available in this category</p>
+                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <span class="flaticon-crane icon"></span>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Enviromental Services</h3>
-                <p>Click the button below for list of services available in this category</p>
-                <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
-              </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <span class="flaticon-building-1 icon"></span>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">Drilling &amp; Water Services</h3>
+                            <p>Click the button below for the list of services available in this category</p>
+                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
+                    <div class="media d-block media-feature text-center">
+                        <span class="flaticon-crane icon"></span>
+                        <div class="media-body">
+                            <h3 class="mt-0 text-black">Civil Engineering Services</h3>
+                            <p>Click the button below for the list of services available in this category</p>
+                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- END row -->
+            <div class="row justify-content-center element-animate">
+                <div class="col-md-4">
+                    <p><a href="{% url 'services_page' %}" class="btn btn-primary btn-block">View All Services</a></p>
+                </div>
+            </div>
         </div>
-        <!-- END row -->
-        <div class="row justify-content-center element-animate">
-          <div class="col-md-4">
-            <p><a href="{% url 'services_page' %}" class="btn btn-primary btn-block">View All Services</a></p>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- END section -->
 
     <section class="section border-t bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4" id="equipment">Available Equipment</h2>
-          </div>
-        </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5 element-animate">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-uppercase heading border-bottom mb-4" id="equipment">Available Equipment</h2>
+                </div>
+            </div>
 
-        <div class="row no-gutters" id="equipments">
-          <div class="col-md-4 element-animate">
-            <a href="#equipments" class="link-thumbnail">
-              <span class="ion-ios-list-outline icon"> Terameter</span>
-              <img src="{% static 'landing/img/equipment/terameter.jpg' %}" alt="Image placeholder" class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;" />
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a href="#equipments" class="link-thumbnail">
-              <span class="ion-ios-list-outline icon"> Percussion Drill</span>
-              <img src="{% static 'landing/img/equipment/percussion_drill.jpg' %}" alt="Image placeholder" class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;" />
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a href="#equipments" class="link-thumbnail">
-              <span class="ion-ios-list-outline icon"> Rotary Drill</span>
-              <img src="{% static 'landing/img/equipment/rotary_drill.jpg' %}" alt="Image placeholder" class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;" />
-            </a>
-          </div>
-        </div>
+            <div class="row no-gutters" id="equipments">
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Terameter</span>
+                        <img src="{% static 'landing/img/equipment/terameter.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Percussion Drill</span>
+                        <img src="{% static 'landing/img/equipment/percussion_drill.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Rotary Drill</span>
+                        <img src="{% static 'landing/img/equipment/rotary_drill.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+            </div>
 
-        <div class="row justify-content-center mt-5 element-animate">
-          <div class="col-md-8 text-center">
-            <p><a href="{% url 'equipments_page' %}" class="btn btn-primary">View All Equipments</a></p>
-          </div>
+            <div class="row justify-content-center mt-5 element-animate">
+                <div class="col-md-8 text-center">
+                    <p><a href="{% url 'equipments_page' %}" class="btn btn-primary">View All Equipments</a></p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- END section -->
 
     <section class="section">
-      <div class="container">
-        <div class="row justify-content-center element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Partners/Clients</h2>
-            <p class="mb-0 lead"></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="brands_slider_container">
-              <div class="owl-carousel owl-theme brands_slider">
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/ADC-logo.jpg' %}" alt="adc-logo" style="height: 100px; width: 180px; margin-top: 7px;"/>
-                  </div>
+        <div class="container">
+            <div class="row justify-content-center element-animate">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-uppercase heading border-bottom mb-4">Partners/Clients</h2>
+                    <p class="mb-0 lead"></p>
                 </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/Bluechip-Technologies-Limited.png' %}" alt="bluechip-logo" style="height: 90px; width: 160px; margin-top: 10px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/celtel_logo.jpg' %}" alt="celtel-logo" style="height: 88px; width: 97px; margin-top: 10px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/egypro_logo.png' %}" alt="egypro-logo" style="height: 110px; width: 130px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/fortis_logo.png' %}" alt="fortis-logo" style="height: 85px; width: 140px; padding-top: 30px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/frcn-logo.jpeg' %}" alt="frcn-logo" style="height: 110px; width: 130px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/gtb-logo.jpg' %}" alt="gtb-logo" style="height: 100px; width: 115px; margin-top: 5px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/helios-towers-africa.png' %}" alt="helios-logo" style="height: 110px; width: 200px;"/>
-                  </div>
-                </div>
-
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/huawei.jpg' %}" alt="huawei-logo" style="height: 110px; width: 200px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/ihs-logo.png' %}" alt="ihs-logo" style="height: 80px; width: 130px; margin-top: 20px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/mtn-logo-A285C69508-seeklogo.com.png' %}" alt="mtn-logo" style="height: 100px; width: 120px; margin-top: 5px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/multilinks-logo.jpeg' %}" alt="multilinks-logo" style="height: 110px; width: 200px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/nta-logo.png' %}" alt="nta-logo" style="height: 110px; width: 150px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/PNN-Nigeria-Brand1.jpg' %}" alt="pnn-logo" style="height: 100px; width: 180px; margin-top: 10px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/servetek.png' %}" alt="servetek-logo" style="height: 60px; width: 130px; margin-top: 20px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/starcomms_logo.png' %}" alt="starcomms-logo" style="height: 110px; width: 170px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/uba-logo.jpg' %}" alt="uba-logo" style="height: 80px; width: 150px; margin-top: 20px;"/>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="brands_item d-flex flex-column justify-content-center">
-                    <img src="{% static 'landing/img/logos/zenith-bank-logo_2.png' %}" alt="zenith-logo" style="height: 80px; width: 100px; margin-top: 20px;"/>
-                  </div>
-                </div>
-              </div>
-              <!-- Brands Slider Navigation -->
-              <div class="brands_nav brands_prev"><i class="ion-chevron-left icon"></i></div>
-              <div class="brands_nav brands_next"><i class="ion-chevron-right icon"></i></div>
             </div>
-          </div>
+            <div class="row element-animate">
+                <div class="col">
+                    <div class="brands_slider_container">
+                        <div class="owl-carousel owl-theme brands_slider">
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/ADC-logo.jpg' %}" alt="adc-logo"
+                                         style="height: 100px; width: 180px; margin-top: 7px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/Bluechip-Technologies-Limited.png' %}"
+                                         alt="bluechip-logo" style="height: 90px; width: 160px; margin-top: 10px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/celtel_logo.jpg' %}" alt="celtel-logo"
+                                         style="height: 88px; width: 97px; margin-top: 10px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/egypro_logo.png' %}" alt="egypro-logo"
+                                         style="height: 110px; width: 130px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/fortis_logo.png' %}" alt="fortis-logo"
+                                         style="height: 85px; width: 140px; padding-top: 30px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/frcn-logo.jpeg' %}" alt="frcn-logo"
+                                         style="height: 110px; width: 130px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/gtb-logo.jpg' %}" alt="gtb-logo"
+                                         style="height: 100px; width: 115px; margin-top: 5px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/helios-towers-africa.png' %}"
+                                         alt="helios-logo" style="height: 110px; width: 200px;"/>
+                                </div>
+                            </div>
+
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/huawei.jpg' %}" alt="huawei-logo"
+                                         style="height: 110px; width: 200px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/ihs-logo.png' %}" alt="ihs-logo"
+                                         style="height: 80px; width: 130px; margin-top: 20px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/mtn-logo-A285C69508-seeklogo.com.png' %}"
+                                         alt="mtn-logo" style="height: 100px; width: 120px; margin-top: 5px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/multilinks-logo.jpeg' %}"
+                                         alt="multilinks-logo" style="height: 110px; width: 200px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/nta-logo.png' %}" alt="nta-logo"
+                                         style="height: 110px; width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/PNN-Nigeria-Brand1.jpg' %}" alt="pnn-logo"
+                                         style="height: 100px; width: 180px; margin-top: 10px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/servetek.png' %}" alt="servetek-logo"
+                                         style="height: 60px; width: 130px; margin-top: 20px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/starcomms_logo.png' %}" alt="starcomms-logo"
+                                         style="height: 110px; width: 170px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/uba-logo.jpg' %}" alt="uba-logo"
+                                         style="height: 80px; width: 150px; margin-top: 20px;"/>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="brands_item d-flex flex-column justify-content-center">
+                                    <img src="{% static 'landing/img/logos/zenith-bank-logo_2.png' %}" alt="zenith-logo"
+                                         style="height: 80px; width: 100px; margin-top: 20px;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Brands Slider Navigation -->
+                        <div class="brands_nav brands_prev"><i class="ion-chevron-left icon"></i></div>
+                        <div class="brands_nav brands_next"><i class="ion-chevron-right icon"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 {% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %} KDF -  Equipments{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">KDF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="/#services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link active" href="{% url 'equipments_page' %}">Equipment</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link" href="{% url 'about_page' %}">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto cta-btn">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact_page' %}">
+                            Make <br/>
+                            Enquiries
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <section class="home-slider  inner-page owl-carousel">
+        <div class="slider-item image-1-slider">
+
+            <div class="container">
+                <div class="row slider-text align-items-center justify-content-center text-center">
+                    <div class="col-md-7 col-sm-12 element-animate">
+                        <h1>Our available equipments</h1>
+                        <p>We have all the required equipments to complete all advertised services</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Terameter</span>
+                        <img src="{% static 'landing/img/equipment/terameter.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Percussion Drill</span>
+                        <img src="{% static 'landing/img/equipment/percussion_drill.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Rotary Drill</span>
+                        <img src="{% static 'landing/img/equipment/rotary_drill.jpg' %}" alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Dutch Cone Penetrator</span>
+                        <img src="{% static 'landing/img/equipment/dutch cone penetrometer2-800x800.jpg' %}"
+                             alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+                <div class="col-md-4 element-animate">
+                    <a href="{% url 'equipments_page' %}" class="link-thumbnail">
+                        <span class="ion-ios-list-outline icon"> Poker Vibrator</span>
+                        <img src="{% static 'landing/img/equipment/poker-vibrator-petrol.jpg' %}"
+                             alt="Image placeholder"
+                             class="img-fluid" style="height: 370px; width: 370px; border: 1px solid #f6f6f6;"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

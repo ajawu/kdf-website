@@ -11,9 +11,9 @@ class LandingPageView(TemplateView):
 
 class ContactPageView(CreateView):
     model = Contact
-    template_name = 'landing/home.html'
+    template_name = 'landing/contacts.html'
     form_class = ContactForm
-    success_url = '/'
+    success_url = '/contact/'
 
     def form_valid(self, form):
         self.object = form.save()
@@ -23,3 +23,15 @@ class ContactPageView(CreateView):
 
 class AboutView(TemplateView):
     template_name = 'landing/about.html'
+
+
+class EquipmentPageView(TemplateView):
+    template_name = 'landing/equipments.html'
+
+
+class ContactView(TemplateView):
+    template_name = 'landing/contacts.html'
+
+
+class ServicesView(TemplateView):
+    template_name = 'landing/services.html'
