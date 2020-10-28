@@ -50,8 +50,7 @@
                 <div class="row slider-text align-items-center justify-content-center text-center">
                     <div class="col-md-7 col-sm-12 element-animate">
                         <h1>Our Services</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
-                            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+                        <p>KDF offers the following services.</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,9 @@
                         <div class="media-body">
                             <h3 class="mt-0 text-black">Drilling &amp; Water Services</h3>
                             <p>Click the button below for the list of services available in this category</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <button data-toggle="modal" data-target="#drillModal" class="btn btn-outline-primary btn-sm">
+                                Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +84,9 @@
                         <div class="media-body">
                             <h3 class="mt-0 text-black">Civil Engineering Services</h3>
                             <p>Click the button below for the list of services available in this category</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <button data-toggle="modal" data-target="#civilModal" class="btn btn-outline-primary btn-sm">
+                                Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +97,9 @@
                         <div class="media-body">
                             <h3 class="mt-0 text-black">Environmental Services</h3>
                             <p>Click the button below for the list of services available in this category</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <button data-toggle="modal" data-target="#envModal" class="btn btn-outline-primary btn-sm">
+                                Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -103,9 +108,11 @@
                     <div class="media d-block media-feature text-center">
                         <span class="flaticon-building icon"></span>
                         <div class="media-body">
-                            <h3 class="mt-0 text-black">Waste Product Service</h3>
+                            <h3 class="mt-0 text-black">Water Product Service</h3>
                             <p>Click the button below for the list of services available in this category</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <button data-toggle="modal" data-target="#waterModal" class="btn btn-outline-primary btn-sm">
+                                Learn More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -116,8 +123,202 @@
                         <div class="media-body">
                             <h3 class="mt-0 text-black">Geotechnical Engineering Services</h3>
                             <p>Click the button below for the list of services available in this category</p>
-                            <p><a href="#" class="btn btn-outline-primary btn-sm">Learn More</a></p>
+                            <button data-toggle="modal" data-target="#geoModal" class="btn btn-outline-primary btn-sm">
+                                Learn More
+                            </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="geoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Geotechnical Engineering Services</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Geotechnical Engineering are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li>Engineering Subsoil Investigation</li>
+                            <li>Geophysical/Geological &amp; Hydrographic Investigations</li>
+                            <li>Vibroflotation Compaction / Soil Stabilisation</li>
+                            <li>Groundwater Control &amp; Dewatery System</li>
+                            <li>Dredging</li>
+                            <li>Foundation Piling Works</li>
+                            <li>Construction of Piling Caps</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="drillModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Drilling &amp; Water Services</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Drilling &amp; Water Services are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li>Construction of water Boreholes</li>
+                            <li>Re-activation and maintenance of water boreholes</li>
+                            <li>Laying of Pipes &amp; Irrigation Works</li>
+                            <li>Construction of Ground &amp; Overhead Tanks/Reservoir</li>
+                            <li>Filter</li>
+                            <li>Gravel Packs and Vibrating Screens</li>
+                            <li>Short Hole Drilling for Site Assessment &amp; Seismic Shooting</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="envModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Environmental Services</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Environmental Services are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li>Landfill design &amp; Construction/Waste Management</li>
+                            <li>Pollution &amp; EIA Studies</li>
+                            <li>Contaminated Site Assessment &amp; Remediation Works</li>
+                            <li>Erosion Control Works</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="waterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Water Product Service</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Water Product Service are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li>Submersible</li>
+                            <li>Surface &amp; Vertical Pumps</li>
+                            <li>Air Compressors and Sewage Pumps</li>
+                            <li>Borehole Casings</li>
+                            <li>Pumping Fittings</li>
+                            <li>Drilling Chemicals</li>
+                            <li>Water &amp; Sewage Treatment</li>
+                            <li>Chemicals and Generators of all sizes</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="civilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Civil Engineering Services</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Civil Engineering Services are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li><b>Space Structures:</b></li>
+                            <ul style="list-style: none">
+                                <li>Telecommunication Towers and Mast </li>
+                            </ul>
+                            <li><b>Educational Buildings:</b></li>
+                            <ul style="list-style: none">
+                                <li>Primary and Secondary Schools</li>
+                                <li>Technical and Training Institutions</li>
+                                <li>Universities</li>
+                            </ul>
+                            <li><b>Public and Commercial Buildings:</b></li>
+                            <ul style="list-style: none">
+                                <li>Hotels, Hospitals, Post Offices</li>
+                                <li>Offices, Mosques, Town Halls</li>
+                                <li>Warehouses, Banks, Churches, Power Stations</li>
+                            </ul>
+                            <li><b>Sports and Recreation Centres:</b></li>
+                            <ul style="list-style: none">
+                                <li>Stadia, Amusement Parks and Swimming Pools</li>
+                            </ul>
+                            <li><b>Civil Engineering Works:</b></li>
+                            <ul style="list-style: none">
+                                <li>All concrete structures - Plain, Reinforced, Prestressed and Post tensioned concrete works</li>
+                                <li>Steel Frame structures, Water Towers, Dams</li>
+                                <li>Bridges, Road Works, Drainages, Canals</li>
+                                <li>Irrigation and Water supply</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="geoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Transaction Detail</h5>
+                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The services available for Geotechnical Engineering are as follows:</p>
+                        <ul class="list-unstyled check">
+                            <li>Engineering Subsoil Investigation</li>
+                            <li>Geophysical/Geological &amp; Hydrographic Investigations</li>
+                            <li>Vibroflotation Compaction / Soil Stabilisation</li>
+                            <li>Groundwater Control &amp; Dewatery System</li>
+                            <li>Dredging</li>
+                            <li>Foundation Piling Works</li>
+                            <li>Construction of Piling Caps</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-close" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
